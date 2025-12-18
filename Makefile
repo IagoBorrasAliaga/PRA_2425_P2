@@ -1,0 +1,3 @@
+bin/testBSTree: testBSTree.cpp BSTree.h BSNode.h
+	mkdir -p bin
+	g++ -o bin/testBSTree testBSTree.cpp
