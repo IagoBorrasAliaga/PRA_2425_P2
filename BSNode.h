@@ -15,7 +15,6 @@ class BSNode {
         BSNode(T elem, BSNode<T>* left = nullptr, BSNode<T>* right = nullptr)
             : elem(elem), left(left), right(right) {}
         
-        // Sobrecarga del operador << (función friend)
         friend std::ostream& operator<<(std::ostream &out, const BSNode<T> &bsn) {
             out << bsn.elem;
             return out;
