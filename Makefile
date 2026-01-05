@@ -5,6 +5,10 @@ bin/testTableEntry: testTableEntry.cpp TableEntry.h
 clean:
 	rm -rf *.o *.gch bin
 
+bin/testBSTreeDict: testBSTreeDict.cpp BSTreeDict.h BSTree.h BSNode.h TableEntry.h Dict.h
+	mkdir -p bin
+	g++ -o bin/testBSTreeDict testBSTreeDict.cpp
+
 
 
 
