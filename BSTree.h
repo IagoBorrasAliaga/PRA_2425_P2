@@ -57,7 +57,6 @@ class BSTree {
             } else {
                 // Elemento encontrado
                 if (n->left != nullptr && n->right != nullptr) {
-                    // Nodo con dos hijos: reemplazar por máximo del subárbol izquierdo
                     n->elem = max(n->left);
                     n->left = remove_max(n->left);
                 } else {
